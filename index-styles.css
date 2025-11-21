@@ -8,6 +8,15 @@
     --nav-text: #E5EBEF;
     --nav-link-hover: #83b6da;
 
+    --hero-bg: var(--nav-bg);
+    --hero-title: #AFCBDF;
+    --hero-subtitle: var(--nav-text);
+    --hero-btn-bg: #AFCBDF14;
+    --hero-btn-text: var(--nav-text);
+    --hero-btn-border: #AFCBDF40;
+    --hero-btn-hover-bg: #AFCBDF99;
+    --hero-btn-hover-text: var(--nav-bg);
+
     --card-bg: #fff;
 }
 
@@ -73,46 +82,45 @@
 /* ---------- Hero ---------- */
 
 .hero {
-    text-align: center;
+    background: var(--hero-bg);
     padding: 10px;
-    background: #1C252C;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 700px;
+    margin: 0 auto;
 }
 
 .hero-title {
+    color: var(--hero-title);
     font-size: 4rem;
-    color: #AFCBDF;
     letter-spacing: 5px;
 }
 
 .hero-subtitle {
+    color: var(--hero-subtitle);
     font-size: 1.5rem;
-    color: #E5EBEF;
     opacity: 0.85;
 }
 
-.hero-container {
-    display: flex;
-    margin-top: 15px;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
 .hero-btn {
-    background: #AFCBDF14; 
-    border: 1px solid #AFCBDF40; 
-    color: #E5EBEF;
-    padding: 10px;
+    background: var(--hero-btn-bg); 
+    color: var(--hero-btn-text);
+    border: 1px solid var(--hero-btn-border); 
     border-radius: 100px;
+    padding: 10px;
     font-size: 1rem;
     font-weight: 700;
     transition: 0.3s;
     box-shadow: 0 0 10px #AFCBDF26;
     text-decoration: none;
+    display: inline-block;
 }
 
 .hero-btn:hover {
-    background: #AFCBDF99;
-    color: #1C252C;
+    background: var(--hero-btn-hover-bg);
+    color: var(--hero-btn-hover-text);
     text-decoration: none;
 }
 
