@@ -35,10 +35,12 @@
                         <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
                         <a class="nav-link" href="#">Nosotros</a>
                         <a class="nav-link" href="#">Contacto</a>
-
-                        <button id="darkModeBtn" class="btn">
-                            <span class="material-symbols-outlined">contrast</span>
-                        </button> 
+                        
+                        <div class="darkMode-container">
+                            <button id="darkModeBtn" class="btn">
+                                <span class="material-symbols-outlined">contrast</span>
+                            </button> 
+                        </div>
                     </div>
                 </div>
             </div>
@@ -46,10 +48,10 @@
 
         <section class="hero">
             <h1 class="hero-title">Lofi Moods</h1>
-            <h2 class="hero-subtitle">Sonidos para acompañar tus momentos de estudio.</h2>
+            <h2 class="hero-subtitle">Te ayudamos a elegir música según cómo te sentís hoy.</h2>
 
             <div class="hero-container">
-                <a href="#" class="hero-btn">Elegí una playlist</a>
+                <a href="#playlists" class="hero-btn">Ver playlists</a>
             </div>
         </section>
 
@@ -83,51 +85,104 @@
 
         <section class="presentacion-lofi">
             <p class="presentacion-text">
-                Lofi Moods es un espacio creado para ayudarte a estudiar, crear, enfocarte y trabajar con calma. 
-                Seleccionamos las mejores playlists para acompañarte en tus días y noches de estudio mejorando tu concentración.
+                Tus emociones cambian y no todos los días estudiamos con la misma energía. Por eso creamos Lofi Moods con playlists pensadas para adaptarse a tu mood, acompañarte en tus momentos de estudio y ayudarte a mantener el enfoque.
             </p>
         </section>
 
-        <section class="cards-lofi">
+        <section class="cards-lofi" id="playlists">
+            <h2 class="cards-title">Playlists recomendadas según tu mood</h2>
+
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col">
-                    <div class="card h-100">
-                        <img src="..." class="card-img-top" alt="...">
+                    <div class="card h-100 card-mood card-alegria">
+                        <img src="Imagenes/1Card.png" class="img-mood" alt="Personaje Alegria estilo pixel">
+
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <h5 class="title-mood">Alegría</h5>
+                            <p class="text-mood">
+                                Para esos días en los que el código compila a la primera, resolvés un bug que te perseguía hace horas (sí, faltaba un punto y coma) o cuando por fin entendés ese tema imposible que seguro entra en el parcial. Esta playlist acompaña esa claridad mental para aprovechar mejor tu día productivo.
+                            </p>
+
+                            <div class="btn-container">
+                                <a href="https://open.spotify.com/playlist/2d0QmAfCc9f4k4oFru8ki8" target="_blank" 
+                                    class="btn-mood btn-alegria">Random playlist</a>
+                            </div>
                         </div>
                     </div>
                 </div>
+
                 <div class="col">
-                    <div class="card h-100">
-                        <img src="..." class="card-img-top" alt="...">
+                    <div class="card h-100 card-mood card-tristeza">
+                        <img src="Imagenes/2Card.png" class="img-mood" alt="Personaje Tristeza estilo pixel">
+
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a short card.</p>
+                            <h5 class="title-mood">Tristeza</h5>
+                            <p class="text-mood">
+                                Para esos días en los que te replanteás por qué estudiás esto, el código deja de funcionar, aparece un error nuevo cada vez que corregís otro o te tildás con un ejercicio y después de horas ya ni sabés lo que estás escribiendo. Esta playlist te acompaña en esos momentos para que puedas avanzar a tu propio ritmo, sin estresarte tanto.
+                            </p>
+
+                            <div class="btn-container">
+                                <a href="" target="_blank" 
+                                    class="btn-mood btn-tristeza">Random playlist</a>
+                            </div>
                         </div>
                     </div>
                 </div>
+
                 <div class="col">
-                    <div class="card h-100">
-                        <img src="..." class="card-img-top" alt="...">
+                    <div class="card h-100 card-mood card-furia">
+                        <img src="Imagenes/3Card.png" class="img-mood" alt="Personaje Furia estilo pixel">
+
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                            <h5 class="title-mood">Furia</h5>
+                            <p class="text-mood">
+
+                            </p>
+
+                            <div class="btn-container">
+                                <a href="" target="_blank" 
+                                    class="btn-mood btn-furia">Random playlist</a>
+                            </div>
                         </div>
                     </div>
                 </div>
+
                 <div class="col">
-                    <div class="card h-100">
-                        <img src="..." class="card-img-top" alt="...">
+                    <div class="card h-100 card-mood card-desagrado">
+                        <img src="Imagenes/4Card.png" class="img-mood" alt="Personaje Desagrado estilo pixel">
+
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <h5 class="title-mood">Desagrado</h5>
+                            <p class="text-mood">
+
+                            </p>
+
+                            <div class="btn-container">
+                                <a href="" target="_blank" 
+                                    class="btn-mood btn-desagrado">Random playlist</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 card-mood card-temor">
+                        <img src="Imagenes/5Card.png" class="img-mood" alt="Personaje Temor estilo pixel">
+
+                        <div class="card-body">
+                            <h5 class="title-mood">Temor</h5>
+                            <p class="text-mood">
+
+                            </p>
+
+                            <div class="btn-container">
+                                <a href="" target="_blank" 
+                                    class="btn-mood btn-temor">Random playlist</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
     </body>
 </html>

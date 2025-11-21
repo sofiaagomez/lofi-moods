@@ -1,3 +1,10 @@
+/* ---------- Estilos Globales ---------- */
+
+:root {
+    --font-main: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
 /* ---------- Navegación ---------- */
 
 .navbar-lofi {
@@ -7,7 +14,6 @@
 
 .navbar-lofi .navbar-brand {
     color: #E5EBEF;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: 800;
     display: flex;
     align-items: center;
@@ -29,6 +35,12 @@
 .navbar-lofi .nav-link:hover {
     color: #83b6da;
     transform: translateY(-2px);
+}
+
+.darkMode-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 #darkModeBtn {
@@ -123,4 +135,138 @@
     font-size: 1.3rem;
     line-height: 1.5;
     margin-bottom: 30px;
+}
+
+
+/* ---------- Cartas ---------- */
+
+.cards-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+
+.card-mood {
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.card-mood:hover {
+    color: #83b6da;
+    transform: translateY(-5px);
+}
+
+.img-mood {
+    max-width: 200px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.title-mood {
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 900;
+}
+
+.text-mood {
+    text-align: justify;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.btn-container {
+    display: flex;
+    margin-top: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btn-mood {
+    background: #AFCBDF33;
+    border: 2.5px solid;
+    color: #1C252C;
+    padding: 6px 14px;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+
+/* ---------- Carta Alegría ---------- */
+
+.card-alegria .title-mood {
+    color: darkgoldenrod; 
+}
+
+.btn-alegria {
+    border-color: #eacb66;
+}
+
+.btn-alegria:hover {
+    background: #FFEBC7;
+}
+
+
+/* ---------- Carta Tristeza ---------- */
+
+.card-tristeza .title-mood {
+    color: darkblue; 
+}
+
+.btn-tristeza {
+    border-color: #6e9de0ee;
+}
+
+.btn-tristeza:hover {
+    background: #C8D8EA;
+}
+
+
+/* ---------- Carta Furia ---------- */
+
+.card-furia .title-mood {
+    color: darkred; 
+}
+
+.btn-furia {
+    border-color: #cf5959cc;
+}
+
+.btn-furia:hover {
+    background: #F5B4B4;
+}
+
+
+/* ---------- Carta Desagrado ---------- */
+
+.card-desagrado .title-mood {
+    color: darkgreen; 
+}
+
+.btn-desagrado {
+    border-color: #7fb564cc;
+}
+
+.btn-desagrado:hover {
+    background: #D6EDC7;
+}
+
+
+/* ---------- Carta Temor ---------- */
+
+.card-temor .title-mood {
+    color: darkmagenta; 
+}
+
+.btn-temor {
+    border-color: #64569ccc;
+}
+
+.btn-temor:hover {
+    background: #D2CBE9;
 }
