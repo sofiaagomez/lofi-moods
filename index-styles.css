@@ -17,7 +17,12 @@
     --hero-btn-hover-bg: #AFCBDF99;
     --hero-btn-hover-text: var(--nav-bg);
 
+    --presentacion-text: var(--text-color);
+
     --card-bg: #fff;
+    --card-border: var(--nav-bg);
+    --card-hoover: var(--nav-link-hover);
+    --card-btn-text: var(--nav-bg);
 }
 
 
@@ -128,13 +133,21 @@
 /* ---------- Carrusel ---------- */
 
 .carousel-lofi {
+    width: 100%;
     max-width: 720px;
     margin: 20px auto;
     border-radius: 50%;
     overflow: hidden;
+    position: relative;
     box-shadow:
         0 0 35px #0091ff66,
-        0 0 60px #02294c40;  
+        0 0 60px #02294c40;
+}
+
+.carousel-lofi img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 
@@ -142,14 +155,15 @@
 
 .presentacion-lofi {
     max-width: 850px;
-    margin: 30px auto;
+    margin: 40px auto;
+    padding: 2px 30px; 
     text-align: center;
 }
 
 .presentacion-text {
+    color: var(--presentacion-text);
     font-size: 1.3rem;
     line-height: 1.5;
-    margin-bottom: 30px;
 }
 
 
@@ -168,22 +182,22 @@
 }
 
 .card-mood {
-    border-color: #1C252C;
+    background: var(--card-bg);
+    border: 2px solid var(--card-border);
     border-radius: 30px;
     transition: 0.3s;
 }
 
 .card-mood:hover {
-    color: #83b6da;
     transform: translateY(-5px);
+    box-shadow: 0 0 20px var(--card-hoover);
 }
 
 .img-mood {
-    max-width: 200px;
+    max-width: 180px;
     border-radius: 50%;
     display: block;
-    margin: 0 auto;
-    margin-top: 10px;
+    margin: 10px auto;
 }
 
 .card-body {
@@ -199,7 +213,7 @@
 }
 
 .text-mood {
-    text-align: justify;
+    text-align: center;
     font-size: 1.1rem;
     line-height: 1.8;
 }
@@ -211,15 +225,20 @@
 }
 
 .btn-mood {
-    background: #AFCBDF33;
-    border: 2.5px solid;
-    color: #1C252C;
-    padding: 6px 14px;
+    background: #c1d3e033;
+    color: var(--card-btn-text);
+    border: 2.5px solid var(--card-border);
     border-radius: 50px;
+    padding: 6px 14px;
     font-weight: 600;
     transition: 0.3s;
     text-decoration: none;
 }
+
+.btn-mood:hover {
+    transform: translateY(-2px);
+}
+
 
 /* ---------- Carta Alegría ---------- */
 
