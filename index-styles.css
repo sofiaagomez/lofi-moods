@@ -1,20 +1,20 @@
 /* ---------- Estilos Globales ---------- */
 
 :root {
-    --text-main: #2c3338;
+    --text-main: #27343d;
     --bg-main: #f2f5f7;
 
-    --card-border: #5e666cc8;
-    --card-hover: #91ccee;
+    --card-border: #a5bed0;
+    --card-hover: #8ec6e8;
 
-    --btn-bg: #ede8e8;
+    --btn-bg: #ffffff;
 }
 
 .dark-mode {
-    --text-main: #e2e8ec;
-    --bg-main: #131a1f;
+    --text-main: #e6eef3;
+    --bg-main: #0e1820;
 
-    --card-border: #6d808c;
+    --card-border: #5e7e92;
     --card-hover: #4a6473;
 
     --btn-bg: #2c3a43;
@@ -115,6 +115,7 @@ body {
     border: 2px solid #b9d8ec55; 
     border-radius: 100px;
     padding: 10px;
+    margin: 10px auto;
     font-size: 1rem;
     font-weight: 700;
     letter-spacing: 2px;
@@ -215,7 +216,7 @@ body {
 .title-mood {
     text-align: center;
     font-size: 1.6rem;
-    font-weight: 900;
+    font-weight: 800;
 }
 
 .text-mood {
@@ -242,7 +243,7 @@ body {
 }
 
 .btn-mood:hover {
-    color: #0f1c22;
+    color: #2f3234;
     transform: translateY(-2px);
 }
 
@@ -250,15 +251,15 @@ body {
 /* ---------- Carta Alegría ---------- */
 
 .card-alegria .title-mood {
-    color: darkgoldenrod; 
+    color: #efc90a;
 }
 
 .btn-alegria {
-    border-color: #eacb66;
+    border-color: #f6c525f8;
 }
 
 .btn-alegria:hover {
-    background: #FFEBC7;
+    background: #f9e594;
 }
 
 
@@ -280,15 +281,15 @@ body {
 /* ---------- Carta Furia ---------- */
 
 .card-furia .title-mood {
-    color: darkred; 
+    color: crimson; 
 }
 
 .btn-furia {
-    border-color: #cf5959cc;
+    border-color: #d10303a5;
 }
 
 .btn-furia:hover {
-    background: #F5B4B4;
+    background: #e99898;
 }
 
 
@@ -299,11 +300,11 @@ body {
 }
 
 .btn-desagrado {
-    border-color: #7fb564cc;
+    border-color: #3b8019cc;
 }
 
 .btn-desagrado:hover {
-    background: #D6EDC7;
+    background: #aee18e;
 }
 
 
@@ -314,9 +315,9 @@ body {
 }
 
 .btn-temor {
-    border-color: #64569ccc;
+    border-color: #6551b9cc;
 }
 
 .btn-temor:hover {
-    background: #D2CBE9;
+    background: #cbbcf9;
 }
