@@ -155,7 +155,7 @@
 
 .presentacion-lofi {
     max-width: 850px;
-    margin: 40px auto;
+    margin: 5px auto;
     padding: 2px 30px; 
     text-align: center;
 }
@@ -169,8 +169,7 @@
 
 /* ---------- Cartas ---------- */
 
-.cards-container {
-    justify-content: center;
+.cards-lofi {
     padding: 15px;
 }
 
@@ -179,6 +178,11 @@
     font-size: 2rem;
     font-weight: 600;
     letter-spacing: 1px;
+    padding: 10px;
+}
+
+.cards-row {
+    justify-content: center;
 }
 
 .card-mood {
