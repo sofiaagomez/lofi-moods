@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nosotros</title>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"       
+            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+        </script>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+        
+        <link rel="stylesheet" href="nav-footer-styles.css">
+        <link rel="stylesheet" href="nosotros-styles.css">
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-lofi">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="Imagenes/Logo.png" alt="Lofi Mood Logo"/>Lofi Moods
+                </a>
+                
+                <button 
+                id="navCollapseBtn"
+                class="navbar-toggler" 
+                type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#navbarNav" 
+                aria-controls="navbarNav" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation" 
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="navbar-nav ms-auto"> 
+                        <a class="nav-link" href="index.html">Inicio</a>
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                        <a class="nav-link" href="#">Contacto</a>
+
+                        <button id="darkModeBtn" aria-label="Cambiar a modo oscuro">
+                            <i class="fa-solid fa-moon"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Sobre Lofi Moods</h1>
+                <h3 class="hero-subtitle">Un espacio donde tu mood inspira la playlist perfecta.</h3>
+            </div>
+        </section>
+
+        <section class="nosotros-grid">
+            <article class="card-nosotros">
+                <h2 class="card-title">Historia</h2>
+
+                <p class="card-text">
+                    Lofi Moods nació de una idea simple: cada día sentimos algo distinto y la música puede acompañar esas emociones.
+                    Creamos este espacio para ofrecer playlists que se adapten a tu mood y te ayuden a estudiar, concentrarte o 
+                    descansar.
+                </p>
+            </article>
+
+            <article class="card-nosotros">
+                <h2 class="card-title">Misión</h2>
+
+                <p class="card-text">
+                    Ayudarte a conectar con tu enfoque mediante música pensada para tu estado de ánimo, en una plataforma simple y 
+                    cálida que te acompañe mientras estudiás o buscás un momento de calma.
+                </p>
+            </article>
+
+            <article class="card-nosotros">
+                <h2 class="card-title">Qué ofrecemos</h2>
+
+                <ul class="card-list">
+                    <li>Playlists según tu mood: elegís cómo te sentís y obtenés música pensada para ese estado de ánimo.</li>
+                    <li>Enfoque sin distracciones: sonidos suaves, sin letra y diseñados para mejorar la concentración, el 
+                        estudio y el descanso.</li>
+                    <li>Ambientes personalizados: diferentes estilos de lo-fi para acompañarte en momentos de calma, energía o 
+                        creatividad.</li>
+                    <li>Interfaz simple y accesible: navegación rápida, limpia y pensada para que encuentres tu mood en segundos.</li>
+                </ul>
+            </article>
+        </section>
+
+        <footer class="footer-lofi">
+            <div class="footer-content">
+                <p class="footer-message">Tu espacio tranquilo, siempre que lo necesites.</p>
+
+                <div class="footer-social">
+                    <a href="https://open.spotify.com/user/chilledcow" target="_blank">
+                        <i class="fa-brands fa-spotify"></i>
+                    </a>
+
+                    <a href="https://www.youtube.com/@LofiGirl" target="_blank">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </div>
+
+                <a href="#" class="footer-up">Volver arriba</a>
+
+                <p class="footer-bottom">&copy; 2025 Lofi Moods – Todos los derechos reservados</p>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>

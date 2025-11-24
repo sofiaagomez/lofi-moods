@@ -4,8 +4,6 @@
     --text-main: #27343d;
     --bg-main: #f2f5f7;
 
-    --dark-mode-hover: #007bffd7;
-
     --card-border: #a5bed0;
     --card-hover: #8ec6e8;
     --card-btn-bg: #ffffff;
@@ -14,8 +12,6 @@
 .dark-mode {
     --text-main: #e6eef3;
     --bg-main: #0e1820;
-
-    --dark-mode-hover: #d2ea00;
 
     --card-border: #5e7e92;
     --card-hover: #4a6473;
@@ -26,67 +22,6 @@ body {
     color: var(--text-main);
     background: var(--bg-main); 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-
-/* ---------- Navegación ---------- */
-
-.navbar-lofi {
-    background: #1C252C;
-    padding: 0.8rem 1rem;
-}
-
-.navbar-lofi .navbar-brand {
-    color: #E5EBEF;
-    font-weight: 800;
-    display: flex;
-    align-items: center;
-    letter-spacing: 2px;
-}
-
-.navbar-brand img {
-    height: 50px;
-    margin-right: 10px;
-}
-
-.nav-link {
-    color: #E5EBEF;
-    font-size: 18px;
-    margin: 0 8px;
-    transition: 0.3s ease;
-}
-
-.nav-link:hover {
-    color: #83b6da;
-    transform: translateY(-2px);
-}
-
-#navCollapseBtn { 
-    border: none; 
-} 
-
-.navbar-toggler-icon { 
-    filter: invert(90%); 
-}
-
-.navbar-nav {
-    display: flex;
-    align-items: center;
-}
-
-#darkModeBtn {
-    color: #E5EBEF;
-    background: none;
-    border: none;
-    margin-left: 10px;
-    font-size: 1.3rem;
-    padding: 5px;
-    transition: 0.3s ease;
-}
-
-#darkModeBtn:hover {
-    color: var(--dark-mode-hover);
-    transform: translateY(-2px);
 }
 
 
@@ -355,64 +290,4 @@ body {
         grid-template-columns: 1fr;
         padding: 0 15px;
     }
-}
-
-
-/* ---------- Footer ---------- */
-
-.footer-lofi {
-    background: #1C252C;
-    color: #E5EBEF;
-    padding: 30px 0 25px;
-    margin-top: 50px;
-    text-align: center;
-}
-
-.footer-content {
-    max-width: 700px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.footer-message {
-    font-size: 20px;
-    opacity: 0.85;
-    margin-bottom: 15px;
-}
-
-.footer-social a {
-    display: inline-block;
-    text-decoration: none;
-    margin: 0 10px;
-}
-
-.fa-brands {
-    color: #E5EBEF;
-    font-size: 32px;
-}
-
-.fa-spotify:hover {
-    color: #55c655;
-}
-
-.fa-youtube:hover {
-    color: #ef2323;
-}
-
-.footer-up {
-    color: #87b6d8;
-    display: inline-block;
-    text-decoration: none;
-    font-size: 18px;
-    margin: 20px 0;
-}
-
-.footer-up:hover {
-    text-decoration: underline;
-}
-
-.footer-bottom {
-    border-top: 1px solid #E5EBEF;
-    font-size: 18px;
-    padding: 20px 0;
 }
