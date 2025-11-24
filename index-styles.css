@@ -25,6 +25,7 @@
 body {
     color: var(--text-main);
     background: var(--bg-main); 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 
@@ -141,7 +142,7 @@ body {
 /* ---------- Presentación ---------- */
 
 .presentacion-lofi {
-    max-width: 900px;
+    max-width: 800px;
     margin: 20px auto;
     padding: 5px 30px;
 }
@@ -150,14 +151,14 @@ body {
     color: var(--text-main);
     text-align: center;
     font-size: 1.3rem;
-    line-height: 1.5;
+    line-height: 1.7;
 }
 
 
 /* ---------- Carrusel ---------- */
 
 .carousel-lofi {
-    width: 90%;
+    width: 85%;
     max-width: 720px;
     margin: 25px auto;
     border-radius: 50%;
@@ -172,6 +173,7 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center;
 }
 
 
@@ -185,20 +187,30 @@ body {
     text-align: center;
     font-size: 2rem;
     font-weight: 600;
-    letter-spacing: 1px;
+    letter-spacing: 1.3px;
     padding: 10px;
 }
 
-.cards-row {
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 25px;
+    margin: 20px auto;
+    max-width: 1400px;
+    padding: 0 20px;
     justify-content: center;
 }
 
 .card-mood {
-    color: var(--text-main);
+    display: flex;
+    flex-direction: column;
     background: var(--bg-main);
+    color: var(--text-main);
     border: 2.5px solid var(--card-border);
+    height: 100%;
     border-radius: 30px;
-    transition: 0.3s;
+    padding-bottom: 20px;
+    transition: 0.3s ease;
 }
 
 .card-mood:hover {
@@ -216,7 +228,8 @@ body {
 .card-body {
     display: flex;
     flex-direction: column;
-    height: 100%;  
+    flex: 1;
+    padding: 15px;
 }
 
 .title-mood {
@@ -227,7 +240,7 @@ body {
 
 .text-mood {
     text-align: center;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     line-height: 1.8;
 }
 
@@ -329,14 +342,36 @@ body {
 }
 
 
+/* ---------- Cartas Responsive ---------- */
+
+@media (max-width: 1024px) {
+    .cards-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .cards-grid {
+        grid-template-columns: 1fr;
+        padding: 0 15px;
+    }
+}
+
+
 /* ---------- Footer ---------- */
 
 .footer-lofi {
     background: #1C252C;
     color: #E5EBEF;
-    padding: 30px 0 20px;
+    padding: 30px 0 25px;
     margin-top: 50px;
     text-align: center;
+}
+
+.footer-content {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .footer-message {
@@ -349,13 +384,11 @@ body {
     display: inline-block;
     text-decoration: none;
     margin: 0 10px;
-    transition: 0.3s ease;
 }
 
 .fa-brands {
     color: #E5EBEF;
     font-size: 32px;
-    transition: 0.3s ease;
 }
 
 .fa-spotify:hover {
@@ -380,8 +413,6 @@ body {
 
 .footer-bottom {
     border-top: 1px solid #E5EBEF;
-    max-width: 700px;
     font-size: 18px;
-    padding: 20px;
-    margin: 0 auto;
+    padding: 20px 0;
 }
