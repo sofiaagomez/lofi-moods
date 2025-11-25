@@ -1,21 +1,21 @@
 /* ---------- Estilos Globales ---------- */
 
 :root {
-    --text-main: #27343d;
-    --bg-main: #f2f5f7;
+    --text-main: #42342d;
+    --bg-main: #f8efe6;
 
-    --card-border: #a5bed0;
-    --card-hover: #8ec6e8;
+    --card-border: #d7b59a;
+    --card-hover: #f1c9a9;
     --card-btn-bg: #ffffff;
 }
 
 .dark-mode {
-    --text-main: #e6eef3;
-    --bg-main: #0e1820;
+    --text-main: #f3e5d8;
+    --bg-main: #1c1410;
 
-    --card-border: #5e7e92;
-    --card-hover: #4a6473;
-    --card-btn-bg: #2c3a43;
+    --card-border: #8b6b52;
+    --card-hover: #c49a78;
+    --card-btn-bg: #433029;
 }
 
 body {
@@ -28,7 +28,7 @@ body {
 /* ---------- Hero ---------- */
 
 .hero {
-    background: #1C252C;
+    background: #2c1f1a;
     padding: 10px;
     text-align: center;
 }
@@ -39,22 +39,22 @@ body {
 }
 
 .hero-title {
-    color: #b9d8ec;
+    color: #ebd6c4;
     font-size: 4rem;
     letter-spacing: 5px;
 }
 
 .hero-subtitle {
-    color: #E5EBEF;
+    color: #eedacb;
     font-size: 1.5rem;
     margin: 10px;
     opacity: 0.85;
 }
 
 .hero-btn {
-    background: #AFCBDF14; 
-    color: #E5EBEF;
-    border: 2px solid #b9d8ec55; 
+    background: #32282366; 
+    color: #f3ede7;
+    border: 2px solid #d2b49b80;
     border-radius: 100px;
     padding: 10px;
     margin: 10px auto;
@@ -62,14 +62,14 @@ body {
     font-weight: 700;
     letter-spacing: 2px;
     transition: 0.3s;
-    box-shadow: 0 0 10px #AFCBDF26;
+    box-shadow: 0 0 10px #d8bfa633;
     text-decoration: none;
     display: inline-block;
 }
 
 .hero-btn:hover {
-    background: #b9d8ec;
-    color: #1C252C;
+    background: #d8bfa6;
+    color: #3a2d26;
     text-decoration: none;
 }
 
@@ -100,8 +100,8 @@ body {
     overflow: hidden;
     position: relative;
     box-shadow:
-        0 0 35px #0091ff66,
-        0 0 60px #02294c40;
+        0 0 35px #c58a5970,
+        0 0 60px #6e4b3040;
 }
 
 .carousel-lofi img {
@@ -254,7 +254,7 @@ body {
 }
 
 .btn-desagrado {
-    border-color: #3b8019cc;
+    border-color: #5b8f41cc;
 }
 
 .btn-desagrado:hover {
@@ -269,7 +269,7 @@ body {
 }
 
 .btn-temor {
-    border-color: #6551b9cc;
+    border-color: #6e5bbbcc;
 }
 
 .btn-temor:hover {

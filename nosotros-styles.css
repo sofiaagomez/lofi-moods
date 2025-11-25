@@ -1,22 +1,23 @@
 /* ---------- Estilos Globales ---------- */
 
 :root {
-    --text-main: #243744;
-    --bg-main: #f2f5f7;
-
-    --card-bg: #e9f0f5;
-    --card-border: #5e7e92;
-    --card-hover: #92caed;
+    --text-main: #42342d;
+    --bg-main: #fdf7f0;
+    
+    --card-bg: #fffaf4;
+    --card-border: #d8bfa6;
+    --card-hover: #f2d7b8;
 }
 
 .dark-mode {
-    --text-main: #e8f2f8;
-    --bg-main: #0e1820;
-
-    --card-bg: #15212b;
-    --card-border: #445b69;
-    --card-hover: #5e7e92;
+    --text-main: #f3eae0;
+    --bg-main: #1a140f;
+    
+    --card-bg: #241c16;
+    --card-border: #8f6e55;
+    --card-hover: #c79e7b;
 }
+
 
 body {
     color: var(--text-main);
@@ -33,7 +34,7 @@ body {
 }
 
 .hero::after {
-    background: var(--card-border); 
+    background: #e0a56b; 
     display: block;
     content: "";
     width: 80px;

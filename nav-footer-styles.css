@@ -1,7 +1,11 @@
 /* ---------- Estilos Globales ---------- */
 
 :root {
-    --dark-mode-hover: #007bffd7;
+    --nav-footer-text: #f6e6d5;
+    --nav-footer-bg: #2c1f1a;
+    --nav-footer-hover: #d8bfa6;
+
+    --dark-mode-hover: #007bff;
 }
 
 .dark-mode {
@@ -12,12 +16,12 @@
 /* ---------- Navegación ---------- */
 
 .navbar-lofi {
-    background: #1C252C;
+    background: var(--nav-footer-bg);
     padding: 0.8rem 1rem;
 }
 
 .navbar-lofi .navbar-brand {
-    color: #E5EBEF;
+    color: var(--nav-footer-text);
     font-weight: 800;
     display: flex;
     align-items: center;
@@ -30,14 +34,14 @@
 }
 
 .nav-link {
-    color: #E5EBEF;
+    color: var(--nav-footer-text);
     font-size: 18px;
     margin: 0 8px;
     transition: 0.3s ease;
 }
 
 .nav-link:hover {
-    color: #83b6da;
+    color: var(--nav-footer-hover);
     transform: translateY(-2px);
 }
 
@@ -55,7 +59,7 @@
 }
 
 #darkModeBtn {
-    color: #E5EBEF;
+    color: var(--nav-footer-text);
     background: none;
     border: none;
     margin-left: 10px;
@@ -73,8 +77,8 @@
 /* ---------- Footer ---------- */
 
 .footer-lofi {
-    background: #1C252C;
-    color: #E5EBEF;
+    background: var(--nav-footer-bg);
+    color: var(--nav-footer-text);
     padding: 30px 0 25px;
     margin-top: 50px;
     text-align: center;
@@ -112,7 +116,7 @@
 }
 
 .footer-up {
-    color: #87b6d8;
+    color: var(--nav-footer-hover);
     display: inline-block;
     text-decoration: none;
     font-size: 18px;
@@ -120,6 +124,7 @@
 }
 
 .footer-up:hover {
+    color: sienna;
     text-decoration: underline;
 }
 
