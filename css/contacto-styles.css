@@ -12,14 +12,14 @@
 }
 
 .hero-title {
-    font-size: 2.8rem;
+    font-size: 2.4rem;
     font-weight: 600;
     letter-spacing: 2px;
     margin-bottom: 10px;
 }
 
 .hero-subtitle {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     opacity: 0.9;
 }
 
@@ -85,7 +85,7 @@
 }
 
 
-/* ---------- Checkboxes ---------- */
+/* ---------- Formulario Checkboxes ---------- */
 
 .form-check {
     display: flex;
@@ -107,7 +107,7 @@
 }
 
 
-/* ---------- Campos Obligatorios ---------- */
+/* ---------- Form Campos Obligatorios ---------- */
 
 #camposObligatorios {
     margin-bottom: 20px;
@@ -116,7 +116,7 @@
 }
 
 
-/* ---------- Botón ---------- */
+/* ---------- Formulario Botón ---------- */
 
 .btn-container {
     text-align: center;
@@ -136,4 +136,56 @@
 
 .btn-enviar:hover {
     background: #8a624c;
+}
+
+
+/* ---------- Contacto Extra ---------- */
+
+.contacto-extra {
+    color: var(--text-main);
+    text-align: center;
+    margin: 80px auto;
+    max-width: 600px;
+}
+
+.extra-title {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.extra-text {
+    font-size: 1rem;
+    margin: 15px 25px;
+}
+
+.social-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-btn {
+    color: var(--text-main);
+    background: var(--bg-main);
+    border: 2px solid var(--card-border);
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 40px;
+    padding: 12px 20px;
+    font-weight: 600;
+    font-size: 1rem;
+    gap: 8px;
+    transition: 0.3s;
+}
+
+.social-btn:hover {
+    background: var(--card-hover);
+}
+
+.social-btn i {
+    color: var(--text-main);
+    font-size: 1.2rem;
 }

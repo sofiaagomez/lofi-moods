@@ -37,6 +37,7 @@ form.addEventListener("submit", function (event) {
     event.preventDefault();
 
     const nombre = document.getElementById("nombre").value.trim();
+    
     const emailValido = emailInput.validity.valid;
 
     const moodsSeleccionados = document.querySelectorAll("input[name='mood[]']:checked");
